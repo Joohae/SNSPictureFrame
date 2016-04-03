@@ -63,7 +63,10 @@
     _holdTimer = YES;
     [[ImageCache sharedManager] requestImage:imageSource.imageUrl
                                      success:^(UIImage *image) {
-                                         _imageView.image = image;
+//                                         _imageView.image = image;
+                                         _backImageView.image = image;
+                                         
+                                         [self switchImage];
                                          
                                          NSString *imageText = [imageSource text];
                                          if (!imageText || [imageText isEqual:[NSNull null]]) {
@@ -76,6 +79,24 @@
                                          NSLog(@"Image download error: %@", error);
                                          _holdTimer = NO;
                                      }];
+}
+
+-(void)switchImage {
+    _imageView.alpha = 1.0f;
+    _backImageView.alpha = 0.0f;
+    
+    [UIView animateWithDuration:1.0
+                     animations:^{
+                         _imageView.alpha = 0.0f;
+                         _backImageView.alpha = 1.0f;
+                         
+                     } completion:^(BOOL finished) {
+                         _imageView.image = _backImageView.image;
+                         _backImageView.image = nil;
+                         
+                         _imageView.alpha = 1.0f;
+                         _backImageView.alpha = 0.0f;
+                     }];
 }
 
 #pragma mark - Timers to slide
