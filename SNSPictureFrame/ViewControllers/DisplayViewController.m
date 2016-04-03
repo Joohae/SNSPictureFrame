@@ -76,19 +76,6 @@
                                          NSLog(@"Image download error: %@", error);
                                          _holdTimer = NO;
                                      }];
-    /*
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageSource.imageUrl]];
-    if (!imageData || [imageData isEqual:[NSNull null]]) {
-        return;
-    }
-    _imageView.image = [UIImage imageWithData:imageData];
-    
-    NSString *imageText = [imageSource text];
-    if (!imageText || [imageText isEqual:[NSNull null]]) {
-        imageText = @"";
-    }
-    [_passedMessage setText:imageText];
-     */
 }
 
 #pragma mark - Timers to slide
