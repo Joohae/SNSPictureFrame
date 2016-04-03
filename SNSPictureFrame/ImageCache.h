@@ -10,6 +10,13 @@
 
 @interface ImageCache : NSObject
 
-+(ImageCache *) shareManager;
++(ImageCache *) sharedManager;
+
+/*!
+ Requesting image.
+ */
+-(void)requestImage:(NSString *)downUrlString
+            success:(void (^)(UIImage *image)) success
+            failure:(void (^)(NSError *error)) failure;
 
 @end

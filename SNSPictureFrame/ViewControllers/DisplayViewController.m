@@ -10,6 +10,8 @@
 #import <SNSServices/SNSDeviceInstagram.h>
 #import <SNSServices/AuthenticationWVCInstagram.h>
 
+#import "ImageCache.h"
+
 #define INSTAGRAM_CLIENT_ID     @"f4a8ac5d3c284448b7db0ad3d6912138"
 #define INSTAGRAM_CLIENT_SECRET @"91868ff829874d37a58a9a9319f2c03b"
 #define INSTAGRAM_REDIRECT_URL  @"http://www.carrotbooks.kr"
@@ -18,6 +20,8 @@
 {
     NSMutableOrderedSet* _imageList;
     BOOL _slideMode;
+    BOOL _holdTimer;
+    long _intervalCounter;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *passedMessage;
@@ -31,6 +35,7 @@
     // Do any additional setup after loading the view.
     [_passedMessage setText:_message];
     _imageList = [[NSMutableOrderedSet alloc] init];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -55,6 +60,23 @@
     }
     
     SNSImageSource *imageSource = [_imageList objectAtIndex:index];
+    _holdTimer = YES;
+    [[ImageCache sharedManager] requestImage:imageSource.imageUrl
+                                     success:^(UIImage *image) {
+                                         _imageView.image = image;
+                                         
+                                         NSString *imageText = [imageSource text];
+                                         if (!imageText || [imageText isEqual:[NSNull null]]) {
+                                             imageText = @"";
+                                         }
+                                         [_passedMessage setText:imageText];
+
+                                         _holdTimer = NO;
+                                     } failure:^(NSError *error) {
+                                         NSLog(@"Image download error: %@", error);
+                                         _holdTimer = NO;
+                                     }];
+    /*
     NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageSource.imageUrl]];
     if (!imageData || [imageData isEqual:[NSNull null]]) {
         return;
@@ -66,26 +88,36 @@
         imageText = @"";
     }
     [_passedMessage setText:imageText];
+     */
 }
 
 #pragma mark - Timers to slide
 - (void) createTimer
 {
     _slideMode = YES;
-    [NSTimer scheduledTimerWithTimeInterval:10.0f target:self selector:@selector(timerHandler:) userInfo:nil repeats:YES];
-    
+    _intervalCounter = 0;
+    [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerHandler:) userInfo:nil repeats:YES];
 }
 
 - (void) timerHandler:(NSTimer *)timer {
     static int index = 1;
-    
-    [self showImageAt:index];
-    
-    index = (index + 1) % _imageList.count;
 
     if (!_slideMode) {
         [timer invalidate];
+        return;
     }
+    
+    if (_holdTimer) {
+        return;
+    }
+    
+    _intervalCounter++;
+    if (_intervalCounter % _interval) {
+        return;
+    }
+
+    [self showImageAt:index];
+    index = (index + 1) % _imageList.count;
 }
 
 #pragma mark - SNS Service Delegates

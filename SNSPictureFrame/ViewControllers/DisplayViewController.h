@@ -14,5 +14,6 @@
 // Segue parameters
 @property (strong, nonatomic) NSString *message;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (assign,nonatomic) long interval;
 
 @end

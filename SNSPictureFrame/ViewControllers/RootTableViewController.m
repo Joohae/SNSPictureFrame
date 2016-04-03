@@ -61,6 +61,7 @@ const NSString *kSecondSectionCell = @"SECOND_SECTION_CELL";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
     DisplayViewController *dvc = [segue destinationViewController];
     dvc.message = sender.textLabel.text;
+    dvc.interval = 10;  // change image every 10 seconds
 }
 // */
 
