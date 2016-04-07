@@ -63,7 +63,6 @@
     _holdTimer = YES;
     [[ImageCache sharedManager] requestImage:imageSource.imageUrl
                                      success:^(UIImage *image) {
-//                                         _imageView.image = image;
                                          _backImageView.image = image;
                                          
                                          [self switchImage];
