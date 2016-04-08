@@ -13,7 +13,7 @@
     "git": "ihttps://github.com/Joohae/SNSServices.git",
     "tag": "#{s.version}"
   },
-  "source_files": "SNSServices/*.{h,m}",
+  "source_files": "SNSServices/**/*.{h,m}",
   "resources": "SNSSErvices/*.xib",
   "frameworks": "SystemConfiguration",
   "platforms": {

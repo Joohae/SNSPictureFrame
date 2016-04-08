@@ -7,69 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00EC2D2C0E3B2E5F9122606780A543E1 /* SNSDeviceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5493320EC34A43DE802D5EAA4C9D7188 /* SNSDeviceBase.m */; };
 		00F09DB5E05D1208F27161E2F016FE36 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B240D99C3FC6A7DC6C66A2434CA799 /* MobileCoreServices.framework */; };
 		022B549F10007177A43FAB1DD5114F7D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19DF616941A51576DD057A9FD8F4AD8 /* Security.framework */; };
 		0A08FC71C4E3B8E0F8734BCDA7CCA7CB /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E71FC5436C29FCEB72394E7117726B8F /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B34DC0658C53A375519A324866E898B /* SNSServices.h in Headers */ = {isa = PBXBuildFile; fileRef = C80E6D20C773983E068636E2A7DF570F /* SNSServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C4F2E5605B8BC5807CDD641F4EE56E1 /* SNSImageSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CCC5353C6E54541BD1CC030A2F599D /* SNSImageSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1160923439553B3AC12EAB1E17F95B73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */; };
+		1194D5FEFA0B5611BCA7BA9EA4398E74 /* AuthenticationWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BE67DD71FCDA2E64D92583B4A20DD /* AuthenticationWebViewController.m */; };
 		14CD3DFB4A25BAEFB205730FA6750025 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1246CB48952FF37C1DB54894C46F6390 /* AFAutoPurgingImageCache.m */; };
 		15460ABD372C937E2A07A2FCDF98C473 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D925E789318555435D0DBEF9BEC8015 /* UIActivityIndicatorView+AFNetworking.m */; };
+		18C72335FEDE73FA60B92F3BFFDFCFB6 /* SNSDeviceFlickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B3F10187CC2E5BEF9953685BC3FA29 /* SNSDeviceFlickr.m */; };
 		19E6319F6ECED7539AABBD9A211F7AEC /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A6CC7151721E485930D715056633ED /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF13354FA1F95658413DF5F680E661D /* SNSDeviceBase.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE01A6BBA8BED6FDFCB7B13164D2664 /* SNSDeviceBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2053D71CF543C3A3CC47C5409D61923C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F2B5E013FD1D42752E768761E043FC /* CoreGraphics.framework */; };
 		23415204AA48A02959E4E5245CF96037 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EAD270211F301E809EA7C39D05A3DC /* AFHTTPSessionManager.m */; };
 		2359387620C5E815BF0594BC40311734 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B9DCDB5BE79C17D786D046D23A6C8F /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		311E5200832E4AE174A193851A2C6317 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8C2F3F38AC8B05D07C9BAACD044EAD /* AFSecurityPolicy.m */; };
 		326A543AD4E39A2DAECA1CD385E3AEA2 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B17FF80B117EDDFBD41C5C3B5C1D217 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		34EB1F942AB1C4F2666339C8B2781B2D /* SNSDeviceInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E29896F26883E58361C75FA2078DFE /* SNSDeviceInstagram.m */; };
 		3511AE7ADBB71D05565854F0E70B7D08 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 525066ED64B26EC45F9B2AD4D3B0D1B2 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35956142CAF3A52654BCBD74DAA90461 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CDEE4CA52FEFB98BD97F58F7E42E9C /* NSDictionary+Helper.m */; };
+		36F07D33B92B4AAF0FCC7DEFC6A442DE /* SNSDeviceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D3709977137071DBBFCE2DA2B50F63 /* SNSDeviceBase.m */; };
+		384990DDF230DBFBA06CFC5B129794DC /* MTRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E02A68E9A5C9BEB8FCE60BF503A68FA /* MTRandom.m */; };
 		38EEA9ED6B922946C54AD6BAC93B73AD /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F90194E52430599383549278FEA918 /* UIProgressView+AFNetworking.m */; };
 		3939531EB270B4145C7ADFBAB2E5695F /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AFF2CC19E35B6A289DF5C325A6C2B4E7 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B792F0EC3FC261E138DF1F5850C0C27 /* SNSServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0628A40F0A7492D7ABD95F0B3CC53260 /* SNSServiceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F6A5BF360CFEB38EE6C5A7DCEB32A34 /* AuthenticationWVCInstagram.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD6E0C0AD4ABEC491E1289BE67910B8 /* AuthenticationWVCInstagram.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43098B12DF5546CB576986E68DBCAFCA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4852ABEFD7FFFAE072C5835CCDB22279 /* AFNetworkReachabilityManager.m */; };
-		4A53654AA09CC8A71CA970BD0E9A3309 /* SNSImageSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D96171B5A6343476294B0AAE0F3BB339 /* SNSImageSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		454F99D62B1B80E300D82E20FC7521E1 /* AuthenticationWVCInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = E3842FAEA8C6C88F854A5D916FB474FB /* AuthenticationWVCInstagram.m */; };
+		46AB65CCF7D978C54531B2CED922B281 /* SNSServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5413BCFC0BAC832ED253DA362ABECC45 /* SNSServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BA19F7DD8F9FDA648137B2CE89E7588 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9DC137B1B02C802E7ABBECC9401A7B /* AFNetworkActivityIndicatorManager.m */; };
-		54D9CDB1E1704090C39848E664787ECB /* AuthenticationWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E53B5BE74E2F90ACF43627C6606D2C8 /* AuthenticationWebViewController.m */; };
-		5D2192F25FA15F37B2014999EC284892 /* SNSDeviceInstagram.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF1F243936CF805B97B08E3A1F86EB3 /* SNSDeviceInstagram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54CEF72678832269A05D511F886CC1CC /* AuthenticationWVCFlickr.h in Headers */ = {isa = PBXBuildFile; fileRef = 52043288DD1CE99EA74C690272482AFC /* AuthenticationWVCFlickr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D52DB6DF2E6C24CECB0015A9177A2E1 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1207584E6BDCF4C846A1DDFE0BCFEECF /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6083F51989A0009C740D92767F4DC1FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */; };
 		6EC97BDB3FC508526F9E388095A7DDCC /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C23C3983ADC1EBC0A6AD3D68F3DBC4BA /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78940A6980F359C4304C695EF6E67C5D /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 516F3F2A9B24B2E2092E84E8EAF0A9F7 /* UIButton+AFNetworking.m */; };
-		78DEDCAF3FA2D7FE8AB092C10E7DA0B5 /* AuthenticationWVCInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 1209AD8D6E12B1149266D813CC3EFBF4 /* AuthenticationWVCInstagram.m */; };
-		7B3BE46EBE55C1B4BC61202B47016C50 /* AuthenticationWVCInstagram.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9B922F78113FB45AFE2DA62E7894C4 /* AuthenticationWVCInstagram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		796901D8EDF4DCD473A90D36E3DEEEDD /* SNSServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF2C50460D250E93C112C273EDD718F /* SNSServiceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BE1DB510B602F091DD63A7799165619 /* MTRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BD072242DD307D4C51E8F7B5AF0F90 /* MTRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ED8061CBA5B56333677B8C6D132D73E /* AuthenticationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 636480D36A25B8B4B0873F9E5DCA00B0 /* AuthenticationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F0578A0258E02384F6229C678E60D31 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CC618B900858F4F77C2746363E77B86C /* UIRefreshControl+AFNetworking.m */; };
 		830050886B18F54E17F117FD8EFC717B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E451FBBEE5D302A74D966AC502CE5B19 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85FAB6F1D2FE0598BF2E61D7BB084B8D /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CB1302DD85B80CBADE42E436CF5930 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D2C8DEA157A2997CE7AF5D075E4AA7C /* SNSServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5143E27AFD251A680FCB6B89FE6CA0 /* SNSServiceManager.m */; };
+		8A52E964F80645218A0549D020088694 /* SNSServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA1852BB9E54A8C80782E7AB2AFC4F5 /* SNSServices-dummy.m */; };
+		8A6D2FE9C232E5D0356C96DA618FFE1C /* SNSImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8ADFE907B2D223508847B9DDC1847A /* SNSImageSource.m */; };
 		8E82178CC9BD8BE3DBF2C10E33807AEB /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D2792B01BCFFB8C68B0CE56421B99A2F /* AFURLRequestSerialization.m */; };
+		953B110F7F20DE342DECD282AF484806 /* SNSDeviceFlickr.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E9A62E87E747D01960EAC77893D6ED /* SNSDeviceFlickr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95452F091D16E1FAAE1422AE832ED0D8 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB1D72A7842F2B9FB091E4BC53CE3D /* NSDictionary+Helper.m */; };
+		9C2E189E1FAAB7D8BD10785D9D6854A7 /* SNSDeviceInstagram.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B705C5C06985FC8E6E3518418A8259A /* SNSDeviceInstagram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1919485E1BC22BA705F8E689BA59924 /* NSDictionary+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A24A8512350DB8906B44C5CBF5A2298 /* NSDictionary+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A32ED6F5591BDB21FAD12BEAA9245174 /* CryptoUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BE4FAB73C4485C4D00025DED4BF908 /* CryptoUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8FC6A53F6C1CB4DEFD972664E1AF3B1 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F2B0D3DD13B76429F713F1F1A1CC6F /* AFNetworking-dummy.m */; };
 		ACE9C1A6E8D5121C6C5F907C7A9CFCC9 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C774AEA3474BF09AD285C28E701D5F /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD359A96DD4AA2C962E50A5CD5524F54 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51204DFB5BF601D556D71C3736263351 /* UIWebView+AFNetworking.m */; };
+		AE7F1D43A97DEF374627CE17F195FA64 /* SNSServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A34AFFBABBCBC956FEB311311804AC18 /* SNSServiceManager.m */; };
 		B0BE398350F83A7B0102C3BBAFC51428 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9837C7FFCFC4203B1BAADAADD8E206 /* UIImageView+AFNetworking.m */; };
-		B12C305572ACF8992B889BF2005105DA /* SNSDeviceBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DB8A2874A6B9CA0CBC8053182F75874 /* SNSDeviceBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B51AA1F7701DCDBCC9B88A15320F9C2C /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8946DE00AC08571F0D4A4F985A8FA609 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CF67F7870BAB70A76E57479B706B42 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 036FDD48539129C05AAE4C9ACA312100 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74B243E487CD743300002FDA4978D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */; };
 		B7EB7690FCA8D20F7B6A36FE1420DACA /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2776438DD2B06F87725975A95E365 /* Pods-dummy.m */; };
 		B8C628A5720AFBB53B77AB2D56904420 /* Pods-SNSPictureFrame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5627D4A5389B100FDDDE6B491370224 /* Pods-SNSPictureFrame-dummy.m */; };
-		B9CCC5839CB33C500813164855AF6E32 /* NSDictionary+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0CF416ACB980CF60D84ACF12696093 /* NSDictionary+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1B65C3D849FEE4FB5298A8135A765DA /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C0DC8653B61F64B5FC03BFC2B0A6E528 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2201E34603B014192F0967473518496 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E990D35FEF51D7420F303E35DCBE1F6 /* AFURLResponseSerialization.m */; };
-		C4B843D38C48BAC670878B4512E589B0 /* SNSServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8816F1C529ABF9839A7BD8665B5494 /* SNSServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C91DC6DBD3C5BABC6439D080C91343C3 /* AuthenticationWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C3988207A4D97523F9CA8E133AACECF2 /* AuthenticationWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBFB915102B7170A5D94C69E6E27CDED /* AuthenticationWVCFlickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 42335277328B52C5C0C76059C7954FDA /* AuthenticationWVCFlickr.m */; };
 		CE8965366A3B07A6C0615055A31B8B83 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C168D5DBDB78691493E24B13EF6B6A8 /* SystemConfiguration.framework */; };
 		D31FEE51AF4BE2A6CC059F80B983CD3B /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006E5A6F0951AA637FFA7F53DBA00D9 /* AFImageDownloader.m */; };
-		DACA8D7F5446F44C886D464C41FC4970 /* AuthenticationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EBAB556CF13F406E40F429468CDE8306 /* AuthenticationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4B547B2261F9465BC4B79E86DC2B450 /* FlickrUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A1999F04D70BA65236D7C267F3D7BD8B /* FlickrUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD1CEBF5EA990C8C9D2B81FD2CEF1181 /* SNSDeviceInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2895941B16EBDDAE0489B4EC6F691 /* SNSDeviceInstagram.m */; };
 		DFDAC8245626953C4BCE5A2DA6BE2A5B /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0401DF9E61B17C3AE9FE93347CCD9E64 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E212C2AA95E8F6EFB69A5F1455F291F8 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD303D6F6C659A55A8684008D1476CB /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED69D9B5A342FE9BD3F170D5CDDEC948 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 357FC25AA9F2E82213C986CE50969E1A /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE1F9E6504F79E9B18368E76B92E477 /* AuthenticationWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C6BABF4898479E6558CAEC2C1DD8D8CC /* AuthenticationWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0F7219BFDDBE9570B27AA620F74E539 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C168D5DBDB78691493E24B13EF6B6A8 /* SystemConfiguration.framework */; };
 		F3774B1449FCE5B3CA3E1B336E11D284 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C03FCF30AB48A3B8DC805A289477E2 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F455734C04A0359BE0F1772AE86E36CC /* SNSImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAF08F1E588AA5E350CBAB243919D3A /* SNSImageSource.m */; };
+		F9A250DC4AB1B4466EDDF0F342620679 /* SNSServices.h in Headers */ = {isa = PBXBuildFile; fileRef = EE989488A47C7456CDC0C3A8856FD617 /* SNSServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9B7B89A069A99C53A9C362B9C3DBE59 /* CryptoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6830C28B0C5C2E8783CF27FD7B271946 /* CryptoUtil.m */; };
+		FC70F958CD1FD89EE6DA9940CB594A10 /* FlickrUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C805100F4662EC89901A0589C7F947 /* FlickrUtil.m */; };
 		FCDDD3BC67EA205C87238A2A87D5C36C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 809E0EE6429DA2700D30D5F8F46F4100 /* AFURLSessionManager.m */; };
 		FD99A43460D417147D37D24514CCFA67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */; };
-		FE9112FD27EFEC346E1CF8D8C4CDD893 /* SNSServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A98D1199A73F7589BF7E895862B3A789 /* SNSServices-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,38 +123,52 @@
 /* Begin PBXFileReference section */
 		036FDD48539129C05AAE4C9ACA312100 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		0401DF9E61B17C3AE9FE93347CCD9E64 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		0628A40F0A7492D7ABD95F0B3CC53260 /* SNSServiceDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSServiceDelegate.h; sourceTree = "<group>"; };
-		0DB8A2874A6B9CA0CBC8053182F75874 /* SNSDeviceBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSDeviceBase.h; sourceTree = "<group>"; };
+		09E9A62E87E747D01960EAC77893D6ED /* SNSDeviceFlickr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSDeviceFlickr.h; sourceTree = "<group>"; };
 		0E9837C7FFCFC4203B1BAADAADD8E206 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		10CCC5353C6E54541BD1CC030A2F599D /* SNSImageSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSImageSource.h; sourceTree = "<group>"; };
 		1207584E6BDCF4C846A1DDFE0BCFEECF /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		1209AD8D6E12B1149266D813CC3EFBF4 /* AuthenticationWVCInstagram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWVCInstagram.m; sourceTree = "<group>"; };
 		1246CB48952FF37C1DB54894C46F6390 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		13BE4FAB73C4485C4D00025DED4BF908 /* CryptoUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CryptoUtil.h; sourceTree = "<group>"; };
 		14673F01BA2ED5D126E93E99A45B2088 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		14F2B0D3DD13B76429F713F1F1A1CC6F /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		18A6CC7151721E485930D715056633ED /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
 		18B9DCDB5BE79C17D786D046D23A6C8F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		1DF2C50460D250E93C112C273EDD718F /* SNSServiceDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSServiceDelegate.h; sourceTree = "<group>"; };
 		1E990D35FEF51D7420F303E35DCBE1F6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		20CB1302DD85B80CBADE42E436CF5930 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		2A24A8512350DB8906B44C5CBF5A2298 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Helper.h"; sourceTree = "<group>"; };
+		2C8BE67DD71FCDA2E64D92583B4A20DD /* AuthenticationWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWebViewController.m; sourceTree = "<group>"; };
+		2E02A68E9A5C9BEB8FCE60BF503A68FA /* MTRandom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MTRandom.m; sourceTree = "<group>"; };
 		2F25C171D7391E5F50DE32BF7CE303FC /* Pods-SNSPictureFrame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNSPictureFrame-acknowledgements.markdown"; sourceTree = "<group>"; };
-		311A11D8B63176DB561FB0DF8E67AE1F /* AuthenticationWebViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AuthenticationWebViewController.xib; sourceTree = "<group>"; };
+		32C805100F4662EC89901A0589C7F947 /* FlickrUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FlickrUtil.m; sourceTree = "<group>"; };
 		3508BF205E105F85DD5B503CC018EFCC /* Pods-SNSPictureFrame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNSPictureFrame-acknowledgements.plist"; sourceTree = "<group>"; };
 		357FC25AA9F2E82213C986CE50969E1A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		35BD072242DD307D4C51E8F7B5AF0F90 /* MTRandom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MTRandom.h; sourceTree = "<group>"; };
+		3AE2895941B16EBDDAE0489B4EC6F691 /* SNSDeviceInstagram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSDeviceInstagram.m; sourceTree = "<group>"; };
 		3B8C2F3F38AC8B05D07C9BAACD044EAD /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		42335277328B52C5C0C76059C7954FDA /* AuthenticationWVCFlickr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWVCFlickr.m; sourceTree = "<group>"; };
 		42C03FCF30AB48A3B8DC805A289477E2 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		42EAD270211F301E809EA7C39D05A3DC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		4852ABEFD7FFFAE072C5835CCDB22279 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		4A5143E27AFD251A680FCB6B89FE6CA0 /* SNSServiceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSServiceManager.m; sourceTree = "<group>"; };
+		48B3F10187CC2E5BEF9953685BC3FA29 /* SNSDeviceFlickr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSDeviceFlickr.m; sourceTree = "<group>"; };
 		4BAB5455D367615A3BF5D432F13A4F88 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D925E789318555435D0DBEF9BEC8015 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		4F70BB93B336C95B071B33BAC939FB6B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
 		51204DFB5BF601D556D71C3736263351 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		516F3F2A9B24B2E2092E84E8EAF0A9F7 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		52043288DD1CE99EA74C690272482AFC /* AuthenticationWVCFlickr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AuthenticationWVCFlickr.h; sourceTree = "<group>"; };
 		525066ED64B26EC45F9B2AD4D3B0D1B2 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		5493320EC34A43DE802D5EAA4C9D7188 /* SNSDeviceBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSDeviceBase.m; sourceTree = "<group>"; };
+		5413BCFC0BAC832ED253DA362ABECC45 /* SNSServiceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSServiceManager.h; sourceTree = "<group>"; };
 		57F2B5E013FD1D42752E768761E043FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		636480D36A25B8B4B0873F9E5DCA00B0 /* AuthenticationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AuthenticationDelegate.h; sourceTree = "<group>"; };
 		65D1918F6FE8FE2AEE7804EE049346E1 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6830C28B0C5C2E8783CF27FD7B271946 /* CryptoUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CryptoUtil.m; sourceTree = "<group>"; };
+		6A8ADFE907B2D223508847B9DDC1847A /* SNSImageSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSImageSource.m; sourceTree = "<group>"; };
+		6BBB1D72A7842F2B9FB091E4BC53CE3D /* NSDictionary+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Helper.m"; sourceTree = "<group>"; };
 		6D604F09AA38880FD92AF55E878DCB20 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C774AEA3474BF09AD285C28E701D5F /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		7AD6E0C0AD4ABEC491E1289BE67910B8 /* AuthenticationWVCInstagram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AuthenticationWVCInstagram.h; sourceTree = "<group>"; };
+		7B705C5C06985FC8E6E3518418A8259A /* SNSDeviceInstagram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSDeviceInstagram.h; sourceTree = "<group>"; };
 		7C168D5DBDB78691493E24B13EF6B6A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		7DDFB764ABF65CDE5A65258954E83619 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		8006E5A6F0951AA637FFA7F53DBA00D9 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
@@ -154,43 +178,39 @@
 		84D2776438DD2B06F87725975A95E365 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		8946DE00AC08571F0D4A4F985A8FA609 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		8B17FF80B117EDDFBD41C5C3B5C1D217 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
-		8E53B5BE74E2F90ACF43627C6606D2C8 /* AuthenticationWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWebViewController.m; sourceTree = "<group>"; };
-		8E9B922F78113FB45AFE2DA62E7894C4 /* AuthenticationWVCInstagram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AuthenticationWVCInstagram.h; sourceTree = "<group>"; };
 		9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9F1260F642BD0F3B473E013336B09F2B /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F8816F1C529ABF9839A7BD8665B5494 /* SNSServiceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSServiceManager.h; sourceTree = "<group>"; };
-		A0CDEE4CA52FEFB98BD97F58F7E42E9C /* NSDictionary+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Helper.m"; sourceTree = "<group>"; };
 		A10BE3D3800BB9B6F45D062E3E280EE6 /* Pods-SNSPictureFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNSPictureFrame.release.xcconfig"; sourceTree = "<group>"; };
+		A1999F04D70BA65236D7C267F3D7BD8B /* FlickrUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FlickrUtil.h; sourceTree = "<group>"; };
 		A19DF616941A51576DD057A9FD8F4AD8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A34AFFBABBCBC956FEB311311804AC18 /* SNSServiceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSServiceManager.m; sourceTree = "<group>"; };
 		A3BB20A1F96590912083388B0A9E2104 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		A605E0FEE23C3716E9D0BC494F6055BF /* Pods-SNSPictureFrame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNSPictureFrame-resources.sh"; sourceTree = "<group>"; };
-		A98D1199A73F7589BF7E895862B3A789 /* SNSServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SNSServices-dummy.m"; sourceTree = "<group>"; };
+		ABE01A6BBA8BED6FDFCB7B13164D2664 /* SNSDeviceBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSDeviceBase.h; sourceTree = "<group>"; };
 		AFF2CC19E35B6A289DF5C325A6C2B4E7 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		B13B3CB6B5A58ED5FCB3552F7754CA7F /* Pods-SNSPictureFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNSPictureFrame.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BFD303D6F6C659A55A8684008D1476CB /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		C0DC8653B61F64B5FC03BFC2B0A6E528 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		C0E29896F26883E58361C75FA2078DFE /* SNSDeviceInstagram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSDeviceInstagram.m; sourceTree = "<group>"; };
 		C23C3983ADC1EBC0A6AD3D68F3DBC4BA /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		C2B240D99C3FC6A7DC6C66A2434CA799 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		C6BABF4898479E6558CAEC2C1DD8D8CC /* AuthenticationWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AuthenticationWebViewController.h; sourceTree = "<group>"; };
-		C80E6D20C773983E068636E2A7DF570F /* SNSServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSServices.h; sourceTree = "<group>"; };
+		C2D3709977137071DBBFCE2DA2B50F63 /* SNSDeviceBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSDeviceBase.m; sourceTree = "<group>"; };
+		C3988207A4D97523F9CA8E133AACECF2 /* AuthenticationWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AuthenticationWebViewController.h; sourceTree = "<group>"; };
 		CC618B900858F4F77C2746363E77B86C /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		D0F90194E52430599383549278FEA918 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		D1364E1A74FA884D5BCADB171DFE7353 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		D2792B01BCFFB8C68B0CE56421B99A2F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		D4A863EA2A1854531CF3C8D79C677254 /* SNSServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SNSServices.xcconfig; sourceTree = "<group>"; };
 		D5BEC13A46A260A544E4AFD5605637E1 /* libSNSServices.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSNSServices.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D930AA85CAAB8125BF770FD44F0AC919 /* Pods-SNSPictureFrame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNSPictureFrame-frameworks.sh"; sourceTree = "<group>"; };
-		D96171B5A6343476294B0AAE0F3BB339 /* SNSImageSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSImageSource.h; sourceTree = "<group>"; };
-		DA0CF416ACB980CF60D84ACF12696093 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Helper.h"; sourceTree = "<group>"; };
-		DEAF08F1E588AA5E350CBAB243919D3A /* SNSImageSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SNSImageSource.m; sourceTree = "<group>"; };
+		E3842FAEA8C6C88F854A5D916FB474FB /* AuthenticationWVCInstagram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWVCInstagram.m; sourceTree = "<group>"; };
 		E451FBBEE5D302A74D966AC502CE5B19 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		E71FC5436C29FCEB72394E7117726B8F /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		EB4C9D54EA915277278AE5D38C397BF4 /* SNSServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNSServices-prefix.pch"; sourceTree = "<group>"; };
-		EBAB556CF13F406E40F429468CDE8306 /* AuthenticationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AuthenticationDelegate.h; sourceTree = "<group>"; };
+		E72AFFEDFFBDC619A2CAAE035CB867A4 /* AuthenticationWebViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AuthenticationWebViewController.xib; sourceTree = "<group>"; };
+		EE989488A47C7456CDC0C3A8856FD617 /* SNSServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSServices.h; sourceTree = "<group>"; };
+		EEA1852BB9E54A8C80782E7AB2AFC4F5 /* SNSServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SNSServices-dummy.m"; sourceTree = "<group>"; };
 		F5627D4A5389B100FDDDE6B491370224 /* Pods-SNSPictureFrame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNSPictureFrame-dummy.m"; sourceTree = "<group>"; };
-		FAF1F243936CF805B97B08E3A1F86EB3 /* SNSDeviceInstagram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SNSDeviceInstagram.h; sourceTree = "<group>"; };
-		FBF71854D1BA10F6CF5AADE942827EEC /* SNSServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SNSServices.xcconfig; sourceTree = "<group>"; };
+		F704F29266EE7201B18932413FC542D9 /* SNSServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNSServices-prefix.pch"; sourceTree = "<group>"; };
 		FE9DC137B1B02C802E7ABBECC9401A7B /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,14 +255,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02E551A07FF8C5E96371CA3A98F331AA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				17D86D02F686C54395BCE598633CF679 /* SNSServices */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		0336952400392A094D9CF93F23FBA803 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,14 +273,6 @@
 				1E990D35FEF51D7420F303E35DCBE1F6 /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
-			sourceTree = "<group>";
-		};
-		17D86D02F686C54395BCE598633CF679 /* SNSServices */ = {
-			isa = PBXGroup;
-			children = (
-				311A11D8B63176DB561FB0DF8E67AE1F /* AuthenticationWebViewController.xib */,
-			);
-			path = SNSServices;
 			sourceTree = "<group>";
 		};
 		1C26585A924F80DB59965DD3B7AB0AD1 /* NSURLSession */ = {
@@ -304,9 +308,18 @@
 		364C555E6B934DF5E1DF7D6B75BFCD1E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F0163824DF1AA6C94A43F1B5900CE6B3 /* SNSServices */,
+				EB9A6CBE899D4E9AF07059F29F83B464 /* SNSServices */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4A1E4A5555BBD548A897E9D215FDCA76 /* Libs3rd */ = {
+			isa = PBXGroup;
+			children = (
+				35BD072242DD307D4C51E8F7B5AF0F90 /* MTRandom.h */,
+				2E02A68E9A5C9BEB8FCE60BF503A68FA /* MTRandom.m */,
+			);
+			path = Libs3rd;
 			sourceTree = "<group>";
 		};
 		641BDD347DE7B8BB81D6CA5727C6EC5A /* Pods */ = {
@@ -342,6 +355,17 @@
 				51204DFB5BF601D556D71C3736263351 /* UIWebView+AFNetworking.m */,
 			);
 			name = UIKit;
+			sourceTree = "<group>";
+		};
+		65EDF106A83381DCA5EA475E29D0E1E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4A863EA2A1854531CF3C8D79C677254 /* SNSServices.xcconfig */,
+				EEA1852BB9E54A8C80782E7AB2AFC4F5 /* SNSServices-dummy.m */,
+				F704F29266EE7201B18932413FC542D9 /* SNSServices-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../SNSPictureFrame/Pods/Target Support Files/SNSServices";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -397,6 +421,47 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
+		B788E28BB64BD9955DBE1E1EBB30986F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0D6CB1CB3EC2CA8A4AB2DBACE67AF99 /* SNSServices */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D3B7D0A2E9523E02AF9E5B2DA6832B05 /* SNSServices */ = {
+			isa = PBXGroup;
+			children = (
+				636480D36A25B8B4B0873F9E5DCA00B0 /* AuthenticationDelegate.h */,
+				C3988207A4D97523F9CA8E133AACECF2 /* AuthenticationWebViewController.h */,
+				2C8BE67DD71FCDA2E64D92583B4A20DD /* AuthenticationWebViewController.m */,
+				52043288DD1CE99EA74C690272482AFC /* AuthenticationWVCFlickr.h */,
+				42335277328B52C5C0C76059C7954FDA /* AuthenticationWVCFlickr.m */,
+				7AD6E0C0AD4ABEC491E1289BE67910B8 /* AuthenticationWVCInstagram.h */,
+				E3842FAEA8C6C88F854A5D916FB474FB /* AuthenticationWVCInstagram.m */,
+				13BE4FAB73C4485C4D00025DED4BF908 /* CryptoUtil.h */,
+				6830C28B0C5C2E8783CF27FD7B271946 /* CryptoUtil.m */,
+				A1999F04D70BA65236D7C267F3D7BD8B /* FlickrUtil.h */,
+				32C805100F4662EC89901A0589C7F947 /* FlickrUtil.m */,
+				2A24A8512350DB8906B44C5CBF5A2298 /* NSDictionary+Helper.h */,
+				6BBB1D72A7842F2B9FB091E4BC53CE3D /* NSDictionary+Helper.m */,
+				ABE01A6BBA8BED6FDFCB7B13164D2664 /* SNSDeviceBase.h */,
+				C2D3709977137071DBBFCE2DA2B50F63 /* SNSDeviceBase.m */,
+				09E9A62E87E747D01960EAC77893D6ED /* SNSDeviceFlickr.h */,
+				48B3F10187CC2E5BEF9953685BC3FA29 /* SNSDeviceFlickr.m */,
+				7B705C5C06985FC8E6E3518418A8259A /* SNSDeviceInstagram.h */,
+				3AE2895941B16EBDDAE0489B4EC6F691 /* SNSDeviceInstagram.m */,
+				10CCC5353C6E54541BD1CC030A2F599D /* SNSImageSource.h */,
+				6A8ADFE907B2D223508847B9DDC1847A /* SNSImageSource.m */,
+				1DF2C50460D250E93C112C273EDD718F /* SNSServiceDelegate.h */,
+				5413BCFC0BAC832ED253DA362ABECC45 /* SNSServiceManager.h */,
+				A34AFFBABBCBC956FEB311311804AC18 /* SNSServiceManager.m */,
+				EE989488A47C7456CDC0C3A8856FD617 /* SNSServices.h */,
+				4A1E4A5555BBD548A897E9D215FDCA76 /* Libs3rd */,
+			);
+			path = SNSServices;
+			sourceTree = "<group>";
+		};
 		D8AEA08F300093373DE87ADAC55F71FA /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,48 +494,21 @@
 			name = Security;
 			sourceTree = "<group>";
 		};
-		F0163824DF1AA6C94A43F1B5900CE6B3 /* SNSServices */ = {
+		EB9A6CBE899D4E9AF07059F29F83B464 /* SNSServices */ = {
 			isa = PBXGroup;
 			children = (
-				02E551A07FF8C5E96371CA3A98F331AA /* Resources */,
-				F52744FCA71BB559DB2FB45D9E9DD575 /* SNSServices */,
-				F3B90DD39090881BB34ADA689D8305F7 /* Support Files */,
+				B788E28BB64BD9955DBE1E1EBB30986F /* Resources */,
+				D3B7D0A2E9523E02AF9E5B2DA6832B05 /* SNSServices */,
+				65EDF106A83381DCA5EA475E29D0E1E3 /* Support Files */,
 			);
 			name = SNSServices;
 			path = ../../SNSServices;
 			sourceTree = "<group>";
 		};
-		F3B90DD39090881BB34ADA689D8305F7 /* Support Files */ = {
+		F0D6CB1CB3EC2CA8A4AB2DBACE67AF99 /* SNSServices */ = {
 			isa = PBXGroup;
 			children = (
-				FBF71854D1BA10F6CF5AADE942827EEC /* SNSServices.xcconfig */,
-				A98D1199A73F7589BF7E895862B3A789 /* SNSServices-dummy.m */,
-				EB4C9D54EA915277278AE5D38C397BF4 /* SNSServices-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../SNSPictureFrame/Pods/Target Support Files/SNSServices";
-			sourceTree = "<group>";
-		};
-		F52744FCA71BB559DB2FB45D9E9DD575 /* SNSServices */ = {
-			isa = PBXGroup;
-			children = (
-				EBAB556CF13F406E40F429468CDE8306 /* AuthenticationDelegate.h */,
-				C6BABF4898479E6558CAEC2C1DD8D8CC /* AuthenticationWebViewController.h */,
-				8E53B5BE74E2F90ACF43627C6606D2C8 /* AuthenticationWebViewController.m */,
-				8E9B922F78113FB45AFE2DA62E7894C4 /* AuthenticationWVCInstagram.h */,
-				1209AD8D6E12B1149266D813CC3EFBF4 /* AuthenticationWVCInstagram.m */,
-				DA0CF416ACB980CF60D84ACF12696093 /* NSDictionary+Helper.h */,
-				A0CDEE4CA52FEFB98BD97F58F7E42E9C /* NSDictionary+Helper.m */,
-				0DB8A2874A6B9CA0CBC8053182F75874 /* SNSDeviceBase.h */,
-				5493320EC34A43DE802D5EAA4C9D7188 /* SNSDeviceBase.m */,
-				FAF1F243936CF805B97B08E3A1F86EB3 /* SNSDeviceInstagram.h */,
-				C0E29896F26883E58361C75FA2078DFE /* SNSDeviceInstagram.m */,
-				D96171B5A6343476294B0AAE0F3BB339 /* SNSImageSource.h */,
-				DEAF08F1E588AA5E350CBAB243919D3A /* SNSImageSource.m */,
-				0628A40F0A7492D7ABD95F0B3CC53260 /* SNSServiceDelegate.h */,
-				9F8816F1C529ABF9839A7BD8665B5494 /* SNSServiceManager.h */,
-				4A5143E27AFD251A680FCB6B89FE6CA0 /* SNSServiceManager.m */,
-				C80E6D20C773983E068636E2A7DF570F /* SNSServices.h */,
+				E72AFFEDFFBDC619A2CAAE035CB867A4 /* AuthenticationWebViewController.xib */,
 			);
 			path = SNSServices;
 			sourceTree = "<group>";
@@ -490,6 +528,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		362E868BCA5E8783DA1E6BD06ACB5C8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED8061CBA5B56333677B8C6D132D73E /* AuthenticationDelegate.h in Headers */,
+				C91DC6DBD3C5BABC6439D080C91343C3 /* AuthenticationWebViewController.h in Headers */,
+				54CEF72678832269A05D511F886CC1CC /* AuthenticationWVCFlickr.h in Headers */,
+				3F6A5BF360CFEB38EE6C5A7DCEB32A34 /* AuthenticationWVCInstagram.h in Headers */,
+				A32ED6F5591BDB21FAD12BEAA9245174 /* CryptoUtil.h in Headers */,
+				D4B547B2261F9465BC4B79E86DC2B450 /* FlickrUtil.h in Headers */,
+				7BE1DB510B602F091DD63A7799165619 /* MTRandom.h in Headers */,
+				A1919485E1BC22BA705F8E689BA59924 /* NSDictionary+Helper.h in Headers */,
+				1EF13354FA1F95658413DF5F680E661D /* SNSDeviceBase.h in Headers */,
+				953B110F7F20DE342DECD282AF484806 /* SNSDeviceFlickr.h in Headers */,
+				9C2E189E1FAAB7D8BD10785D9D6854A7 /* SNSDeviceInstagram.h in Headers */,
+				0C4F2E5605B8BC5807CDD641F4EE56E1 /* SNSImageSource.h in Headers */,
+				796901D8EDF4DCD473A90D36E3DEEEDD /* SNSServiceDelegate.h in Headers */,
+				46AB65CCF7D978C54531B2CED922B281 /* SNSServiceManager.h in Headers */,
+				F9A250DC4AB1B4466EDDF0F342620679 /* SNSServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B981229135DBE9773A86BDB116C368D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,23 +572,6 @@
 				5D52DB6DF2E6C24CECB0015A9177A2E1 /* UIProgressView+AFNetworking.h in Headers */,
 				ACE9C1A6E8D5121C6C5F907C7A9CFCC9 /* UIRefreshControl+AFNetworking.h in Headers */,
 				B5CF67F7870BAB70A76E57479B706B42 /* UIWebView+AFNetworking.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAC36E441EEFC2DB1E025CF377664D8F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DACA8D7F5446F44C886D464C41FC4970 /* AuthenticationDelegate.h in Headers */,
-				EFE1F9E6504F79E9B18368E76B92E477 /* AuthenticationWebViewController.h in Headers */,
-				7B3BE46EBE55C1B4BC61202B47016C50 /* AuthenticationWVCInstagram.h in Headers */,
-				B9CCC5839CB33C500813164855AF6E32 /* NSDictionary+Helper.h in Headers */,
-				B12C305572ACF8992B889BF2005105DA /* SNSDeviceBase.h in Headers */,
-				5D2192F25FA15F37B2014999EC284892 /* SNSDeviceInstagram.h in Headers */,
-				4A53654AA09CC8A71CA970BD0E9A3309 /* SNSImageSource.h in Headers */,
-				3B792F0EC3FC261E138DF1F5850C0C27 /* SNSServiceDelegate.h in Headers */,
-				C4B843D38C48BAC670878B4512E589B0 /* SNSServiceManager.h in Headers */,
-				0B34DC0658C53A375519A324866E898B /* SNSServices.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,9 +635,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB244DCB66A73ED0E356002A164FC90C /* Build configuration list for PBXNativeTarget "SNSServices" */;
 			buildPhases = (
-				F4843664F9E780DCCA218AD51E33CFFA /* Sources */,
+				A6298ED979335699E88D4D138DA17724 /* Sources */,
 				B4994D25293F621628D23985F8A593B6 /* Frameworks */,
-				CAC36E441EEFC2DB1E025CF377664D8F /* Headers */,
+				362E868BCA5E8783DA1E6BD06ACB5C8F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -644,6 +687,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6298ED979335699E88D4D138DA17724 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1194D5FEFA0B5611BCA7BA9EA4398E74 /* AuthenticationWebViewController.m in Sources */,
+				CBFB915102B7170A5D94C69E6E27CDED /* AuthenticationWVCFlickr.m in Sources */,
+				454F99D62B1B80E300D82E20FC7521E1 /* AuthenticationWVCInstagram.m in Sources */,
+				F9B7B89A069A99C53A9C362B9C3DBE59 /* CryptoUtil.m in Sources */,
+				FC70F958CD1FD89EE6DA9940CB594A10 /* FlickrUtil.m in Sources */,
+				384990DDF230DBFBA06CFC5B129794DC /* MTRandom.m in Sources */,
+				95452F091D16E1FAAE1422AE832ED0D8 /* NSDictionary+Helper.m in Sources */,
+				36F07D33B92B4AAF0FCC7DEFC6A442DE /* SNSDeviceBase.m in Sources */,
+				18C72335FEDE73FA60B92F3BFFDFCFB6 /* SNSDeviceFlickr.m in Sources */,
+				DD1CEBF5EA990C8C9D2B81FD2CEF1181 /* SNSDeviceInstagram.m in Sources */,
+				8A6D2FE9C232E5D0356C96DA618FFE1C /* SNSImageSource.m in Sources */,
+				AE7F1D43A97DEF374627CE17F195FA64 /* SNSServiceManager.m in Sources */,
+				8A52E964F80645218A0549D020088694 /* SNSServices-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA51830DB96D39AE26A541198EB2219D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,21 +735,6 @@
 				38EEA9ED6B922946C54AD6BAC93B73AD /* UIProgressView+AFNetworking.m in Sources */,
 				7F0578A0258E02384F6229C678E60D31 /* UIRefreshControl+AFNetworking.m in Sources */,
 				AD359A96DD4AA2C962E50A5CD5524F54 /* UIWebView+AFNetworking.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4843664F9E780DCCA218AD51E33CFFA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54D9CDB1E1704090C39848E664787ECB /* AuthenticationWebViewController.m in Sources */,
-				78DEDCAF3FA2D7FE8AB092C10E7DA0B5 /* AuthenticationWVCInstagram.m in Sources */,
-				35956142CAF3A52654BCBD74DAA90461 /* NSDictionary+Helper.m in Sources */,
-				00EC2D2C0E3B2E5F9122606780A543E1 /* SNSDeviceBase.m in Sources */,
-				34EB1F942AB1C4F2666339C8B2781B2D /* SNSDeviceInstagram.m in Sources */,
-				F455734C04A0359BE0F1772AE86E36CC /* SNSImageSource.m in Sources */,
-				8D2C8DEA157A2997CE7AF5D075E4AA7C /* SNSServiceManager.m in Sources */,
-				FE9112FD27EFEC346E1CF8D8C4CDD893 /* SNSServices-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,7 +846,7 @@
 		};
 		9EE650037AD31E4813BFFB34FF1CB00B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBF71854D1BA10F6CF5AADE942827EEC /* SNSServices.xcconfig */;
+			baseConfigurationReference = D4A863EA2A1854531CF3C8D79C677254 /* SNSServices.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SNSServices/SNSServices-prefix.pch";
@@ -923,7 +971,7 @@
 		};
 		FCE8E2D1025CE874FBE47324BE5A59C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBF71854D1BA10F6CF5AADE942827EEC /* SNSServices.xcconfig */;
+			baseConfigurationReference = D4A863EA2A1854531CF3C8D79C677254 /* SNSServices.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SNSServices/SNSServices-prefix.pch";
