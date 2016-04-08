@@ -7,8 +7,17 @@
 //
 
 #import "DisplayViewController.h"
+
+#import <SNSServices/SNSDeviceBase.h>
 #import <SNSServices/SNSDeviceInstagram.h>
+#import <SNSServices/SNSDeviceFlickr.h>
+
+#import <SNSServices/AuthenticationWebViewController.h>
+
+// Temporary
 #import <SNSServices/AuthenticationWVCInstagram.h>
+#import <SNSServices/AuthenticationWVCFlickr.h>
+// -- Temporary
 
 #import "ImageCache.h"
 
@@ -22,6 +31,8 @@
     BOOL _slideMode;
     BOOL _holdTimer;
     long _intervalCounter;
+    
+    SNSServicesType _currentService;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *passedMessage;
@@ -36,13 +47,42 @@
     [_passedMessage setText:_message];
     _imageList = [[NSMutableOrderedSet alloc] init];
     
+    _currentService = [SNSServiceManager getServiceByTitle:_message];
+    
+    [SNSServiceManager sharedManager].delegate = self;
 }
 
 -(void)viewDidAppear:(BOOL)animated {
-    SNSDeviceInstagram *instagram = [[SNSDeviceInstagram alloc] init];
-    [instagram setClinetID:INSTAGRAM_CLIENT_ID secret:INSTAGRAM_CLIENT_SECRET andCallbackBase:INSTAGRAM_REDIRECT_URL];
-    [instagram setDelegate:self];
-    [instagram requestFileList];
+    switch (_currentService) {
+        case SNSServiceInstagram:
+            if (![[SNSServiceManager sharedManager] hasDevice:_currentService]) {
+                SNSDeviceInstagram *instagram = [[SNSDeviceInstagram alloc] init];
+                [instagram setClinetID:INSTAGRAM_CLIENT_ID secret:INSTAGRAM_CLIENT_SECRET andCallbackBase:INSTAGRAM_REDIRECT_URL];
+                [[SNSServiceManager sharedManager] addDevice:instagram withType:_currentService];
+            }
+            break;
+        case SNSServiceFlickr:
+            if (![[SNSServiceManager sharedManager] hasDevice:_currentService]) {
+                SNSDeviceFlickr *flickr = [[SNSDeviceFlickr alloc] init];
+                [[SNSServiceManager sharedManager] addDevice:flickr withType:_currentService];
+            }
+            break;
+        case SNSServiceFacebook:
+        case SNSServicePicasa:
+            
+        case SNSServiceVoid:
+        default:
+            [[[UIAlertView alloc] initWithTitle:@"Error"
+                                       message:@"The service is not implemented or unknown."
+                                      delegate:self
+                             cancelButtonTitle:@"Cancel" otherButtonTitles: nil]
+             show];
+            return;
+            break;
+    }
+    
+    //  Send the request
+    [[SNSServiceManager sharedManager] requestFileListTo:_currentService];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {
@@ -139,7 +179,12 @@
 }
 
 -(void) SNSServiceError:(NSError *)error {
-    NSLog(@"Error: %@", [[error userInfo] valueForKey:NSLocalizedDescriptionKey]);
+    [[[UIAlertView alloc] initWithTitle:@"SNSServiceError"
+                                message:[NSString stringWithFormat:@"%@", [[error userInfo] valueForKey:NSLocalizedDescriptionKey]]
+                               delegate:self
+                      cancelButtonTitle:@"Cancel" otherButtonTitles:nil]
+     show];
+    NSLog(@"SNSServiceError: %@", error);
 }
 
 -(UIViewController *) SNSWebAuthenticationRequired {
@@ -147,6 +192,11 @@
 }
 
 -(void) SNSWebAuthenticationFailed:(NSError *)error {
+    [[[UIAlertView alloc] initWithTitle:@"SNSWebAuthenticationFailed"
+                                message:[NSString stringWithFormat:@"%@", [[error userInfo] valueForKey:NSLocalizedDescriptionKey]]
+                               delegate:self
+                      cancelButtonTitle:@"Cancel" otherButtonTitles:nil]
+     show];
     NSLog(@"SNSWebAuthenticationFailed: %@", error);
 }
 
