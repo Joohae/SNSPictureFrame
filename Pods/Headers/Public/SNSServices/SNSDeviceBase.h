@@ -1,1 +1,1 @@
-../../../../../SNSServices/SNSServices/SNSDeviceBase.h
+../../../SNSServices/SNSServices/SNSDeviceBase.h

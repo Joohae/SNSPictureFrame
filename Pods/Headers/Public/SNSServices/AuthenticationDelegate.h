@@ -1,1 +1,1 @@
-../../../../../SNSServices/SNSServices/AuthenticationDelegate.h
+../../../SNSServices/SNSServices/AuthenticationDelegate.h
