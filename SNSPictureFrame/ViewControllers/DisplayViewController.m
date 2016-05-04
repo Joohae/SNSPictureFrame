@@ -25,6 +25,10 @@
 #define INSTAGRAM_CLIENT_SECRET @"91868ff829874d37a58a9a9319f2c03b"
 #define INSTAGRAM_REDIRECT_URL  @"http://www.carrotbooks.kr"
 
+#define FLICKR_CLIENT_KEY       @"3f093987e018fbfbbbe8a4ca87608a2b"
+#define FLICKR_CLIENT_SECRET    @"d509f29e4fb1f322"
+#define FLICKR_REDIRECT_URL     @"frd509f29e4fb1f322"   // reuse client secret with prefix fr
+
 @interface DisplayViewController ()
 {
     NSMutableOrderedSet* _imageList;
@@ -64,6 +68,7 @@
         case SNSServiceFlickr:
             if (![[SNSServiceManager sharedManager] hasDevice:_currentService]) {
                 SNSDeviceFlickr *flickr = [[SNSDeviceFlickr alloc] init];
+                [flickr setClinetKey:FLICKR_CLIENT_KEY secret:FLICKR_CLIENT_SECRET andCallbackBase:FLICKR_REDIRECT_URL];
                 [[SNSServiceManager sharedManager] addDevice:flickr withType:_currentService];
             }
             break;
