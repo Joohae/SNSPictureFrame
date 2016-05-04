@@ -207,6 +207,8 @@
 
 -(void) SNSWebAuthenticationSuccess {
     NSLog(@"SNSWebAuthenticationSuccess");
+    //  Send the request
+    [[SNSServiceManager sharedManager] requestFileListTo:_currentService];
 }
 
 @end
