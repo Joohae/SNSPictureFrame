@@ -1,1 +1,1 @@
-../../../../../SNSServices/SNSServices/AuthenticationWVCInstagram.h
+../../../SNSServices/SNSServices/AuthenticationWVCInstagram.h
