@@ -1,1 +1,1 @@
-../../../SNSServices/SNSServices/SNSDeviceInstagram.h
+../../../../../SNSServices/SNSServices/SNSDeviceInstagram.h

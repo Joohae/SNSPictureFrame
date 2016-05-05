@@ -1,1 +1,1 @@
-../../../SNSServices/SNSServices/SNSServiceManager.h
+../../../../../SNSServices/SNSServices/SNSServiceManager.h

@@ -14,7 +14,7 @@
     "tag": "#{s.version}"
   },
   "source_files": "SNSServices/**/*.{h,m}",
-  "resources": "SNSSErvices/*.xib",
+  "resources": "SNSSErvices/*.{xib,html}",
   "frameworks": "SystemConfiguration",
   "platforms": {
     "ios": "7.0"
