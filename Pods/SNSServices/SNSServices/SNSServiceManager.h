@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, SNSServicesType) {
 
 @interface SNSServiceManager : NSObject
 
-@property (nonatomic) id<SNSServiceDelegate> delegate;
+@property (nonatomic,weak) id<SNSServiceDelegate> delegate;
 
 +(SNSServiceManager *)sharedManager;
 

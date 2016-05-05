@@ -31,9 +31,8 @@
     }
     
     SNSDeviceBase *theDevice = [_devices objectForKey:@(deviceType)];
-    if (!theDevice.delegate && _delegate) {
-        theDevice.delegate = _delegate;
-    }
+    theDevice.delegate = _delegate;
+    
     [theDevice requestFileList];
     
 }

@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SNSServices:
-    :commit: 77f2f5418018fa2d14ae444ceccc8a07ed39c506
+    :commit: c52eed041553553b61ed8f5d72fb115e536fa5d2
     :git: https://github.com/Joohae/SNSServices.git
 
 SPEC CHECKSUMS:

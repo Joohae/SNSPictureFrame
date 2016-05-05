@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, SNSServiceError) {
 
 @interface SNSDeviceBase : NSObject
 
-@property (nonatomic) id<SNSServiceDelegate> delegate;
+@property (nonatomic,weak) id<SNSServiceDelegate> delegate;
 
 /*!
  Check if the device has authentication to request
