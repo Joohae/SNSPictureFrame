@@ -25,12 +25,17 @@
 #define INSTAGRAM_CLIENT_SECRET @"91868ff829874d37a58a9a9319f2c03b"
 #define INSTAGRAM_REDIRECT_URL  @"http://www.carrotbooks.kr"
 
+#define FLICKR_CLIENT_KEY       @"3f093987e018fbfbbbe8a4ca87608a2b"
+#define FLICKR_CLIENT_SECRET    @"d509f29e4fb1f322"
+#define FLICKR_REDIRECT_URL     @"frd509f29e4fb1f322"   // reuse client secret with prefix fr
+
 @interface DisplayViewController ()
 {
     NSMutableOrderedSet* _imageList;
     BOOL _slideMode;
     BOOL _holdTimer;
     long _intervalCounter;
+    int _retryCount;
     
     SNSServicesType _currentService;
 }
@@ -50,6 +55,7 @@
     _currentService = [SNSServiceManager getServiceByTitle:_message];
     
     [SNSServiceManager sharedManager].delegate = self;
+    _retryCount = 0;
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -64,6 +70,7 @@
         case SNSServiceFlickr:
             if (![[SNSServiceManager sharedManager] hasDevice:_currentService]) {
                 SNSDeviceFlickr *flickr = [[SNSDeviceFlickr alloc] init];
+                [flickr setClinetKey:FLICKR_CLIENT_KEY secret:FLICKR_CLIENT_SECRET andCallbackBase:FLICKR_REDIRECT_URL];
                 [[SNSServiceManager sharedManager] addDevice:flickr withType:_currentService];
             }
             break;
@@ -171,6 +178,9 @@
 
 -(void) SNSServiceFileListFetched:(NSArray<SNSImageSource *>*)fileList {
     NSLog(@"File list has fetched: %lu", (unsigned long)fileList.count);
+    
+    _retryCount = 0;
+    
     [_imageList addObjectsFromArray:fileList];
     
     NSLog(@"Number of images in the set: %lu", (unsigned long)_imageList.count);
@@ -179,12 +189,16 @@
 }
 
 -(void) SNSServiceError:(NSError *)error {
+    NSLog(@"SNSPictureFrame-SNSServiceError: %@", error);
+    if (error.code == -1011 && _retryCount < 3) { // bad request
+        [[SNSServiceManager sharedManager] requestFileListTo:_currentService];
+        return;
+    }
     [[[UIAlertView alloc] initWithTitle:@"SNSServiceError"
                                 message:[NSString stringWithFormat:@"%@", [[error userInfo] valueForKey:NSLocalizedDescriptionKey]]
                                delegate:self
                       cancelButtonTitle:@"Cancel" otherButtonTitles:nil]
      show];
-    NSLog(@"SNSServiceError: %@", error);
 }
 
 -(UIViewController *) SNSWebAuthenticationRequired {
