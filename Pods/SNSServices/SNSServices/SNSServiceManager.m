@@ -32,7 +32,6 @@
     
     SNSDeviceBase *theDevice = [_devices objectForKey:@(deviceType)];
     theDevice.delegate = _delegate;
-    
     [theDevice requestFileList];
     
 }

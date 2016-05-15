@@ -22,5 +22,17 @@
     
     return response;
 }
+
++(NSDictionary *)parseURLResponse:(NSString *)response {
+    NSMutableDictionary *dict = [NSMutableDictionary new];
+    NSArray *items = [response componentsSeparatedByString:@"&"];
+    for (NSString *item in items) {
+        NSArray *keyValue = [item componentsSeparatedByString:@"="];
+        if (keyValue.count < 2) continue;
+        [dict setObject:keyValue[1] forKey:keyValue[0]];
+    }
+    
+    return dict;
+}
 @end
 		

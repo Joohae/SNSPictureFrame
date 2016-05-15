@@ -17,7 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (!_targetURL) {
-        _targetURL = @"https://google.com";
+        NSString *frameworkBundleID = @"kr.carrotbooks.SNSServices";
+        NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:frameworkBundleID];
+        if (! frameworkBundle) {
+            frameworkBundle = [NSBundle mainBundle];
+        }
+        _targetURL = [frameworkBundle pathForResource:@"defaultpage" ofType:@"html"];
+        NSLog(@"Target URL: %@", _targetURL);
     }
     // Do any additional setup after loading the view from its nib.
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_targetURL]];

@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - SNSServices (0.1.0):
+  - SNSServices (0.2.0):
     - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
@@ -26,11 +26,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SNSServices:
-    :commit: c52eed041553553b61ed8f5d72fb115e536fa5d2
+    :commit: f90cc203890e417698d893b2c9b17a336c94a850
     :git: https://github.com/Joohae/SNSServices.git
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  SNSServices: 2fc937a4283150d7508e55ab774520c911d84376
+  SNSServices: 1c346d94e61f1cf0ef6243c84cd863f7b187197f
 
 COCOAPODS: 0.39.0

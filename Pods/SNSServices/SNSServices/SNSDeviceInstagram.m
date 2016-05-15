@@ -104,6 +104,11 @@ static NSString *const KEY_INSTAGRAM_ACCESS_TOKEN = @"KEY_INSTAGRAM_ACCESS_TOKEN
                                 forMaxID:[responseObject objectForKeyPath:@"pagination.next_max_id"]];
              }
          } failure:^(NSURLSessionTask *operation, NSError *error) {
+             NSLog(@"Error code: %d", error.code);
+             if (error.code == -1011) {
+                 _accessToken = nil;
+                 [[NSUserDefaults standardUserDefaults] removeObjectForKey:KEY_INSTAGRAM_ACCESS_TOKEN];
+             }
              if (self.delegate && [self.delegate respondsToSelector:@selector(SNSServiceError:)]) {
                  [self.delegate SNSServiceError:error];
              }
