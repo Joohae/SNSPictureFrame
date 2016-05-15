@@ -1,1 +1,1 @@
-../../../../../SNSServices/SNSServices/SNSDeviceFlickr.h
+../../../SNSServices/SNSServices/SNSDeviceFlickr.h

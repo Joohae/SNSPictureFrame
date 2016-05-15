@@ -58,12 +58,10 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "../../SNSServices/SNSServices/AuthenticationWebViewController.xib"
-  install_resource "../../SNSServices/SNSServices/defaultpage.html"
+  install_resource "SNSServices/SNSServices/AuthenticationWebViewController.xib"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "../../SNSServices/SNSServices/AuthenticationWebViewController.xib"
-  install_resource "../../SNSServices/SNSServices/defaultpage.html"
+  install_resource "SNSServices/SNSServices/AuthenticationWebViewController.xib"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

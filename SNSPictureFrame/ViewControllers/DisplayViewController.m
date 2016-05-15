@@ -35,6 +35,7 @@
     BOOL _slideMode;
     BOOL _holdTimer;
     long _intervalCounter;
+    int _retryCount;
     
     SNSServicesType _currentService;
 }
@@ -54,6 +55,7 @@
     _currentService = [SNSServiceManager getServiceByTitle:_message];
     
     [SNSServiceManager sharedManager].delegate = self;
+    _retryCount = 0;
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -176,6 +178,9 @@
 
 -(void) SNSServiceFileListFetched:(NSArray<SNSImageSource *>*)fileList {
     NSLog(@"File list has fetched: %lu", (unsigned long)fileList.count);
+    
+    _retryCount = 0;
+    
     [_imageList addObjectsFromArray:fileList];
     
     NSLog(@"Number of images in the set: %lu", (unsigned long)_imageList.count);
@@ -184,12 +189,16 @@
 }
 
 -(void) SNSServiceError:(NSError *)error {
+    NSLog(@"SNSPictureFrame-SNSServiceError: %@", error);
+    if (error.code == -1011 && _retryCount < 3) { // bad request
+        [[SNSServiceManager sharedManager] requestFileListTo:_currentService];
+        return;
+    }
     [[[UIAlertView alloc] initWithTitle:@"SNSServiceError"
                                 message:[NSString stringWithFormat:@"%@", [[error userInfo] valueForKey:NSLocalizedDescriptionKey]]
                                delegate:self
                       cancelButtonTitle:@"Cancel" otherButtonTitles:nil]
      show];
-    NSLog(@"SNSServiceError: %@", error);
 }
 
 -(UIViewController *) SNSWebAuthenticationRequired {

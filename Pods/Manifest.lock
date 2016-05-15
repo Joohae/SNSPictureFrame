@@ -18,14 +18,19 @@ PODS:
     - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
-  - SNSServices (from `../SNSServices/`)
+  - SNSServices (from `https://github.com/Joohae/SNSServices.git`)
 
 EXTERNAL SOURCES:
   SNSServices:
-    :path: "../SNSServices/"
+    :git: https://github.com/Joohae/SNSServices.git
+
+CHECKOUT OPTIONS:
+  SNSServices:
+    :commit: c52eed041553553b61ed8f5d72fb115e536fa5d2
+    :git: https://github.com/Joohae/SNSServices.git
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  SNSServices: 34e8dbb35c2ed467276e57f57f36d65e06769918
+  SNSServices: 2fc937a4283150d7508e55ab774520c911d84376
 
 COCOAPODS: 0.39.0

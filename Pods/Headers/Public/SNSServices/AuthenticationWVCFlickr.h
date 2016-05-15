@@ -1,1 +1,1 @@
-../../../../../SNSServices/SNSServices/AuthenticationWVCFlickr.h
+../../../SNSServices/SNSServices/AuthenticationWVCFlickr.h
